@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "fastapiproject"
+version = "0.1.0"
+description = ""
+authors = ["danilkonkov <buroroll@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.92.0"
+uvicorn = "^0.20.0"
+loguru = "^0.6.0"
+pylint = "^2.16.2"
+dask = { extras = ["dataframe"], version = "^2.26.0" }
+sqlalchemy = "^2.0.4"
+psycopg2-binary = "^2.9.5"
+
+
+[tool.poetry.group.dev.dependencies]
+matplotlib = "^3.7.0"
+memory-profiler = "^0.61.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
